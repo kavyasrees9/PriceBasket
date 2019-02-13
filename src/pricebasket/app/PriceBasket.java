@@ -77,7 +77,7 @@ public class PriceBasket {
 	 * @see method to check and return the denomination symbol £ or p
 	 */
 	private static String getPrintPrice(double price) {
-		if (price > 1) {
+		if (price >= 1) {
 			return "£" + String.format("%.2f", price);
 		} else {
 			return String.format("%.0f", (price * 100)) + "p";
